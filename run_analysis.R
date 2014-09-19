@@ -9,18 +9,18 @@
 library(dplyr)
 
 # ---- Load data files
-activity_labels<-read.table(file = "UCI HAR Dataset/activity_labels.txt")
-features<-read.table(file = "UCI HAR Dataset/features.txt")
+activity_labels<-read.table(file = "./UCI HAR Dataset/activity_labels.txt")
+features<-read.table(file = "./UCI HAR Dataset/features.txt")
 
 # -- Train files
-X_train<-read.table(file = "UCI HAR Dataset/train/X_train.txt")
-y_train<-read.table(file = "UCI HAR Dataset/train/y_train.txt")
-subject_train<-read.table(file = "UCI HAR Dataset/train/subject_train.txt")
+X_train<-read.table(file = "./UCI HAR Dataset/train/X_train.txt")
+y_train<-read.table(file = "./UCI HAR Dataset/train/y_train.txt")
+subject_train<-read.table(file = "./UCI HAR Dataset/train/subject_train.txt")
 
 # -- Test files
-X_test<-read.table(file = "UCI HAR Dataset/test/X_test.txt")
-y_test<-read.table(file = "UCI HAR Dataset/test/y_test.txt")
-subject_test<-read.table(file = "UCI HAR Dataset/test/subject_test.txt")
+X_test<-read.table(file = "./UCI HAR Dataset/test/X_test.txt")
+y_test<-read.table(file = "./UCI HAR Dataset/test/y_test.txt")
+subject_test<-read.table(file = "./UCI HAR Dataset/test/subject_test.txt")
 
 # ---- Bind each dataset to respective subject and activity vector
 trainset<-cbind(X_train,subject_train,y_train)
