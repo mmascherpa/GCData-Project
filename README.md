@@ -6,7 +6,7 @@ The script run_analysis.R completes the task defined in the project description 
 
 ## Instructions to execute the script
 1. Save the script run_analysis.R in an empty directory
-2. Save the data file "getdata-projectfiles-UCI HAR Dataset.zip" in the same directory
+2. Extract the data file "getdata-projectfiles-UCI HAR Dataset.zip" in the same directory
 3. Ensure a new directory called "UCI HAR Dataset" is created and contains all the data files necessary (see below for a full list of the files needed)
 4. Execute R or RStudio
 5. Set the working directory to the directory that was just created (`setwd("/path/to/dir/")`)
